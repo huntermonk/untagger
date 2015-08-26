@@ -10,28 +10,35 @@ import UIKit
 import Parse
 import ParseCrashReporting
 import Bolts
+import FBSDKCoreKit
+import ParseFacebookUtilsV4
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    // AppDelegate.swift
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        Parse.enableLocalDatastore()
-        ParseCrashReporting.enable()
         
         Parse.setApplicationId("L4CMWsmMMtpTuzeJGoMGWcne3NNV4KQ6R5PD5D6L", clientKey: "cDWOPSjG9IfrBIkUyJtQkTawKRM0IiMWiTudC6Dm")
         
-        PFFacebookUtils.initializeFacebookWithLaunchOptions(launchOptions)
-        
-        PFUser.enableRevocableSessionInBackground()
-        
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+            return FBSDKApplicationDelegate.sharedInstance().application(application,
+                openURL: url,
+                sourceApplication: sourceApplication,
+                annotation: annotation)
+    }
+    
+    
+    //Make sure it isn't already declared in the app delegate (possible redefinition of func error)
+    func applicationDidBecomeActive(application: UIApplication) {
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillResignActive(application: UIApplication) {
