@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Parse
+import ParseCrashReporting
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.enableLocalDatastore()
+        ParseCrashReporting.enable()
+        
+        Parse.setApplicationId("L4CMWsmMMtpTuzeJGoMGWcne3NNV4KQ6R5PD5D6L", clientKey: "cDWOPSjG9IfrBIkUyJtQkTawKRM0IiMWiTudC6Dm")
+        
+        PFFacebookUtils.initializeFacebookWithLaunchOptions(launchOptions)
+        
+        PFUser.enableRevocableSessionInBackground()
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
         return true
     }
 

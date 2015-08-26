@@ -13,6 +13,12 @@
 		6576C5A11B003C3D00898C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6576C5A01B003C3D00898C53 /* Images.xcassets */; };
 		6576C5A41B003C3D00898C53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6576C5A21B003C3D00898C53 /* LaunchScreen.xib */; };
 		6576C5B01B003C3D00898C53 /* UNTAGGERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576C5AF1B003C3D00898C53 /* UNTAGGERTests.swift */; };
+		6576C5BE1B003CCE00898C53 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576C5B91B003CCE00898C53 /* Bolts.framework */; };
+		6576C5BF1B003CCE00898C53 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576C5BA1B003CCE00898C53 /* Parse.framework */; };
+		6576C5C01B003CCE00898C53 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576C5BB1B003CCE00898C53 /* ParseCrashReporting.framework */; };
+		6576C5C11B003CCE00898C53 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576C5BC1B003CCE00898C53 /* ParseFacebookUtils.framework */; };
+		6576C5C21B003CCE00898C53 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576C5BD1B003CCE00898C53 /* ParseFacebookUtilsV4.framework */; };
+		65797CC51B8D3F6200CA63A7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65797CC41B8D3F6200CA63A7 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,13 @@
 		6576C5A91B003C3D00898C53 /* UNTAGGERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UNTAGGERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576C5AE1B003C3D00898C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6576C5AF1B003C3D00898C53 /* UNTAGGERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNTAGGERTests.swift; sourceTree = "<group>"; };
+		6576C5B91B003CCE00898C53 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6576C5BA1B003CCE00898C53 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		6576C5BB1B003CCE00898C53 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		6576C5BC1B003CCE00898C53 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		6576C5BD1B003CCE00898C53 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		65797CC41B8D3F6200CA63A7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		65797CC61B8D3FF800CA63A7 /* UNTAGGER-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UNTAGGER-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6576C5BF1B003CCE00898C53 /* Parse.framework in Frameworks */,
+				6576C5C01B003CCE00898C53 /* ParseCrashReporting.framework in Frameworks */,
+				65797CC51B8D3F6200CA63A7 /* FBSDKLoginKit.framework in Frameworks */,
+				6576C5C11B003CCE00898C53 /* ParseFacebookUtils.framework in Frameworks */,
+				6576C5BE1B003CCE00898C53 /* Bolts.framework in Frameworks */,
+				6576C5C21B003CCE00898C53 /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +101,7 @@
 				6576C59D1B003C3D00898C53 /* Main.storyboard */,
 				6576C5A01B003C3D00898C53 /* Images.xcassets */,
 				6576C5A21B003C3D00898C53 /* LaunchScreen.xib */,
+				6576C5C31B003CD500898C53 /* Frameworks */,
 				6576C5971B003C3D00898C53 /* Supporting Files */,
 			);
 			path = UNTAGGER;
@@ -90,6 +110,7 @@
 		6576C5971B003C3D00898C53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65797CC61B8D3FF800CA63A7 /* UNTAGGER-Bridging-Header.h */,
 				6576C5981B003C3D00898C53 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +131,19 @@
 				6576C5AE1B003C3D00898C53 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6576C5C31B003CD500898C53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65797CC41B8D3F6200CA63A7 /* FBSDKLoginKit.framework */,
+				6576C5B91B003CCE00898C53 /* Bolts.framework */,
+				6576C5BA1B003CCE00898C53 /* Parse.framework */,
+				6576C5BB1B003CCE00898C53 /* ParseCrashReporting.framework */,
+				6576C5BC1B003CCE00898C53 /* ParseFacebookUtils.framework */,
+				6576C5BD1B003CCE00898C53 /* ParseFacebookUtilsV4.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,9 +374,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UNTAGGER",
+				);
 				INFOPLIST_FILE = UNTAGGER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UNTAGGER",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UNTAGGER/UNTAGGER-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +395,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UNTAGGER",
+				);
 				INFOPLIST_FILE = UNTAGGER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UNTAGGER",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UNTAGGER/UNTAGGER-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +464,7 @@
 				6576C5B51B003C3D00898C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6576C5B61B003C3D00898C53 /* Build configuration list for PBXNativeTarget "UNTAGGERTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +473,7 @@
 				6576C5B81B003C3D00898C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
