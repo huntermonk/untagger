@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FF53CCBE12666ED6707B164 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1A070920FC14F448DE4315 /* libPods.a */; };
 		6576C59A1B003C3D00898C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576C5991B003C3D00898C53 /* AppDelegate.swift */; };
 		6576C59C1B003C3D00898C53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576C59B1B003C3D00898C53 /* ViewController.swift */; };
 		6576C59F1B003C3D00898C53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6576C59D1B003C3D00898C53 /* Main.storyboard */; };
 		6576C5A11B003C3D00898C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6576C5A01B003C3D00898C53 /* Images.xcassets */; };
 		6576C5A41B003C3D00898C53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6576C5A21B003C3D00898C53 /* LaunchScreen.xib */; };
 		6576C5B01B003C3D00898C53 /* UNTAGGERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576C5AF1B003C3D00898C53 /* UNTAGGERTests.swift */; };
-		65797CCA1B8D431000CA63A7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 65797CC91B8D431000CA63A7 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		282E1385584F9988DECCF37D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2E1A070920FC14F448DE4315 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAE8B888DCE4644C1A52D5F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6576C5941B003C3D00898C53 /* UNTAGGER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UNTAGGER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576C5981B003C3D00898C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6576C5991B003C3D00898C53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +41,6 @@
 		6576C5AE1B003C3D00898C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6576C5AF1B003C3D00898C53 /* UNTAGGERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNTAGGERTests.swift; sourceTree = "<group>"; };
 		65797CC61B8D3FF800CA63A7 /* UNTAGGER-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UNTAGGER-Bridging-Header.h"; sourceTree = "<group>"; };
-		65797CC91B8D431000CA63A7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF53CCBE12666ED6707B164 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42BDFE1C5AAEA940D0AA8104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E1A070920FC14F448DE4315 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6576C58B1B003C3D00898C53 = {
 			isa = PBXGroup;
 			children = (
 				6576C5961B003C3D00898C53 /* UNTAGGER */,
 				6576C5AC1B003C3D00898C53 /* UNTAGGERTests */,
 				6576C5951B003C3D00898C53 /* Products */,
+				C63A373C4439A13314257D5C /* Pods */,
+				42BDFE1C5AAEA940D0AA8104 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +107,6 @@
 		6576C5971B003C3D00898C53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				65797CC91B8D431000CA63A7 /* Podfile */,
 				65797CC61B8D3FF800CA63A7 /* UNTAGGER-Bridging-Header.h */,
 				6576C5981B003C3D00898C53 /* Info.plist */,
 			);
@@ -125,6 +137,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C63A373C4439A13314257D5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				282E1385584F9988DECCF37D /* Pods.debug.xcconfig */,
+				3FAE8B888DCE4644C1A52D5F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6576C5B31B003C3D00898C53 /* Build configuration list for PBXNativeTarget "UNTAGGER" */;
 			buildPhases = (
+				0C61AE0C704D7DAE2EE16B49 /* Check Pods Manifest.lock */,
 				6576C5901B003C3D00898C53 /* Sources */,
 				6576C5911B003C3D00898C53 /* Frameworks */,
 				6576C5921B003C3D00898C53 /* Resources */,
+				24E7FA6436BB855881C02BAF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +192,8 @@
 		6576C58C1B003C3D00898C53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Hunter Maximillion Monk";
 				TargetAttributes = {
@@ -207,7 +232,6 @@
 			files = (
 				6576C59F1B003C3D00898C53 /* Main.storyboard in Resources */,
 				6576C5A41B003C3D00898C53 /* LaunchScreen.xib in Resources */,
-				65797CCA1B8D431000CA63A7 /* Podfile in Resources */,
 				6576C5A11B003C3D00898C53 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +244,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C61AE0C704D7DAE2EE16B49 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		24E7FA6436BB855881C02BAF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6576C5901B003C3D00898C53 /* Sources */ = {
@@ -352,6 +409,7 @@
 		};
 		6576C5B41B003C3D00898C53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282E1385584F9988DECCF37D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -373,6 +431,7 @@
 		};
 		6576C5B51B003C3D00898C53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAE8B888DCE4644C1A52D5F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
